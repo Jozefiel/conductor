@@ -26,7 +26,10 @@ import org.springframework.core.io.FileSystemResource;
 // Prevents from the datasource beans to be loaded, AS they are needed only for specific databases.
 // In case that SQL database is selected this class will be imported back in the appropriate
 // database persistence module.
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+// FRINX: add orkes package to include the archive module (since it is in orkes package)
+@SpringBootApplication(
+        scanBasePackages = {"io.orkes.conductor", "com.netflix.conductor"},
+        exclude = DataSourceAutoConfiguration.class)
 public class Conductor {
 
     private static final Logger log = LoggerFactory.getLogger(Conductor.class);
