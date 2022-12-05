@@ -1,5 +1,19 @@
 ![Conductor](docs/docs/img/logo.png)
 
+# FRINX considerations
+
+> :warning: **Only applies to this fork**
+
+We are using a subset (specialized build) of conductor including some compontents from conductor-community and orkes-conductor-community.
+
+FRINX fork of conductor: this
+FRINX fork of conductor community: https://github.com/FRINXio/conductor-community 
+
+* FRINX fork of conductor also includes python client which in upstream is now located at: https://github.com/conductor-sdk/conductor-python
+* FRINX fork of conductor community also incldues packages from orkes-conductor-community, namely the archive package
+
+Conductor/server produces a build specific to us. We do not build / test all the components.
+
 # Conductor
 Conductor is a platform created by Netflix to orchestrate workflows that span across microservices.
 
