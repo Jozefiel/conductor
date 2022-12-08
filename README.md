@@ -1,5 +1,7 @@
 ![Conductor](docs/docs/img/logo.png)
 
+Blabla
+
 # FRINX considerations
 
 > :warning: **Only applies to this fork**
